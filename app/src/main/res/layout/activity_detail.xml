@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.donas4ceos.earthquake.detail"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/first_LinLy"
+            >
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Magnitude:"
+                android:id="@+id/magnitudet"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Magnitude:"
+                android:id="@+id/magnitude"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Time:"
+                android:id="@+id/datet"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Time:"
+                android:id="@+id/date"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Location:"
+                android:id="@+id/locationt"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Location:"
+                android:id="@+id/location"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/second_LinLy"
+            >
+
+            <fragment
+                android:id="@+id/mapView"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
